@@ -19,7 +19,7 @@ class TabNotifications extends Feature {
     var alerts = document.getElementById("notify_number_notify").innerHTML;
 
     function changeTitle() {
-      if (!Notify.notifyIcon.hasClass("notify-num-displayed")) {
+      if (!document.Notify.notifyIcon.hasClass("notify-num-displayed")) {
         alerts = document.getElementById("notify_number_notify").innerHTML = "0";
         alertStatus = 1;
       }
