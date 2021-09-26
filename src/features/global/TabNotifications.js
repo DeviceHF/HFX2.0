@@ -27,7 +27,6 @@ class TabNotifications extends Feature {
     // Page attributes
     const notificationElement = $("#notify_number_notify");
     const existingTitle = $(".breadcrumb").find("a").last().text();
-
     // Event listener, checking for click on the notification icon.
     $("li").each(function(index) {
       this.addEventListener("click", function() {
