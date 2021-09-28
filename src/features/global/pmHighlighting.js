@@ -24,7 +24,7 @@ class PmHighlighting extends Feature {
 
     //  Compare <a> innerText UID with UID in array
     for (var i = 0; i < uid.length; i++) {
-      if ($("old_pm").$("a").includes(uid[i])) {
+      if (document.getElementsByTagName("a[href='private.php?action=read&pmi]").includes(uid[i])) {
         alert("yes");
       }
     }
