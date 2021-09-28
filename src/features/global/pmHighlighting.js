@@ -22,7 +22,7 @@ class PmHighlighting extends Feature {
 
     let mid = [];
 
-    //  Compare <a> innerText UID with UID in array
+    //  Compare <a> innerText MID with MID in array -- NOT WORKING
     for (var i = 0; i < mid.length; i++) {
       if (document.getElementsByTagName("a[href='private.php?action=read&pmi]").includes(mid[i])) {
         alert("yes");
