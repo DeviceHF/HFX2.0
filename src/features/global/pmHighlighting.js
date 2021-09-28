@@ -20,16 +20,16 @@ class PmHighlighting extends Feature {
     favoriteButton.name = "favorite";
     favoriteButton.type = "button";
 
-    let uid = [];
+    let mid = [];
 
     //  Compare <a> innerText UID with UID in array
-    for (var i = 0; i < uid.length; i++) {
-      if (document.getElementsByTagName("a[href='private.php?action=read&pmi]").includes(uid[i])) {
+    for (var i = 0; i < mid.length; i++) {
+      if (document.getElementsByTagName("a[href='private.php?action=read&pmi]").includes(mid[i])) {
         alert("yes");
       }
     }
 
-    // Keep only numbers in uid array
+    // Keep only numbers in mid array
     function removeText(start, middle, end, array) {
       var newArray = [];
       for (var i = 0; i < array.length; i++) {
@@ -47,10 +47,10 @@ class PmHighlighting extends Feature {
       this.addEventListener("click", function() {
         let checkboxes = $("input[type='checkbox']");
         checkboxes.filter(":checked").map(function() {
-          uid.push(this.name);
-          uid = removeText("check", "[", "]", uid);
+          mid.push(this.name);
+          mid = removeText("check", "[", "]", mid);
         }).get();
-        alert(uid);
+        alert(mid);
       });
     });
   }
