@@ -42,5 +42,6 @@ module.exports = {
   TabNotifications: require("./features/global/TabNotifications"),
   TagNotificationSound: require("./features/convo/TagNotificationSound"),
   ThemeCustomizer: require("./features/global/ThemeCustomizer"),
-  TrackingLinks: require("./features/pms/TrackingLinks")
+  TrackingLinks: require("./features/pms/TrackingLinks"),
+  pmHighlighting: require("./features/global/pmHighlighting")
 };
